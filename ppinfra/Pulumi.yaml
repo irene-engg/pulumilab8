@@ -1,0 +1,10 @@
+name: pulumilab8irene
+description: Lab 8
+runtime:
+  name: nodejs
+  options:
+    packagemanager: npm
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aiven-typescript

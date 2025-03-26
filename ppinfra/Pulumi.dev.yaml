@@ -1,0 +1,5 @@
+config:
+  pulumilab8irene:cloudName: AWS
+  pulumilab8irene:project: puldev
+  pulumilab8irene:serviceName: puldev
+
