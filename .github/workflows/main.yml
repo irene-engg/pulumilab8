@@ -39,3 +39,4 @@ jobs:
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
           AWS_REGION: us-west-2  # Add this line
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
