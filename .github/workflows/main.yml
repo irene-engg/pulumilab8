@@ -26,7 +26,7 @@ jobs:
       - uses: pulumi/actions@v5
         with:
           command: up
-          stack-name: ireneengg2011/pulumilab8dev
+          stack-name: ireneengg2011/pulumilab8/pulumilab8dev
           work-dir: ./ppinfra
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
