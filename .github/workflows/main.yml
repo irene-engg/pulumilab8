@@ -6,6 +6,10 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   pulumi-up:
     name: pulumi-up
@@ -17,7 +21,7 @@ jobs:
       - name: Configure AWS credentials from OIDC
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: arn:aws:iam::474668427249:role/GitHubActionsRole
+          role-to-assume: arn:aws:iam::474668427249:role/GitHubAction-AssumeRoleWithAction
           aws-region: us-west-2
           role-session-name: GitHubActionsSession
 
