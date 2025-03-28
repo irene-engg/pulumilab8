@@ -19,6 +19,7 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::474668427249:role/GitHubActionsRole
           aws-region: us-west-2
+          role-session-name: GitHubActionsSession
 
       - name: Set up Node.js 18
         uses: actions/setup-node@v4
